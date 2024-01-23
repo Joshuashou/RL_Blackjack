@@ -7,6 +7,6 @@ I set an exploration probability of 10% to explore new pathways rather than the 
 Here are the results and strategies for Usable(hard) and Non USable Ace(soft)
 
 
-![alt_text](https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/0.1%2C%201%3A3000%2C%2010M)/Hard%20Hit%20State%20Action%20Values%20(0.1%2C%201%3A3000%2C%2010M).png)
+![Alt text](https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/0.1%2C%201%3A3000%2C%2010M)/Hard%20Hit%20State%20Action%20Values%20(0.1%2C%201%3A3000%2C%2010M).png)
 
 
