@@ -6,7 +6,7 @@ I set an exploration probability of 10% to explore new pathways rather than the 
 
 Here are the results and strategies for Usable(hard) and Non Usable Ace(soft) for Exploration probability of 10% and Step size of 1/5000, as well as their actual state action values. 
 
-<img width="465" alt="Hard Optimal State Action Pairs (0 1, 1:5000, 10M)" src="https://github.com/Joshuashou/RL_Blackjack/assets/81851383/7a8c127c-e974-4faa-885e-cc4ff88ee806">
+<img width="400" alt="Hard Optimal State Action Pairs (0 1, 1:5000, 10M)" src="https://github.com/Joshuashou/RL_Blackjack/assets/81851383/7a8c127c-e974-4faa-885e-cc4ff88ee806">
 <img width="469" alt="Soft Optimal State Action Pairs (0 1, 1:5000, 10M)" src="https://github.com/Joshuashou/RL_Blackjack/assets/81851383/c767bbfe-03f1-4409-90cc-415e23e39558">
 
 
