@@ -117,5 +117,20 @@ class Blackjack_MC():
 
             #UPDATE POLICIES
             self.update_policy(visited_states, payoffs)
+
+            #Store values at intervals. 
+
+        # Initialize a dictionary to store policy values at intervals
+        self.policy_values_at_intervals = {}
+
+        # Define the intervals
+        intervals = [1, 1000, 10000, 100000] + list(range(200000, self.iterations+1, 100000))
+
+        for i in range(1, self.iterations + 1):  # Start counting from 1
+
+            # Save policy values at specified intervals
+            if i in intervals:
+                self.policy_values_at_intervals[i] = np.copy(self.policy_values)
+
                     
             
