@@ -10,7 +10,7 @@ if __name__ == "__main__":
 
     epsilon = 0.1
     alphas = [1.0/1000, 1.0/3000, 1.0/5000]
-    iterations = 1000
+    iterations = 10000000
 
 
     for alpha in alphas:

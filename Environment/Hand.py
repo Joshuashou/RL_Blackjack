@@ -32,7 +32,7 @@ class Hand(): #Defines a Hand in Blackjack
         self.value = self.calculate_hand_value()
 
         if new_Card == '1' and (self.value - old_value == 11):
-            self.use_ace = True
+            self.use_ace = 1
 
     
         

@@ -1,4 +1,4 @@
-import Hand
+from Environment import Hand
 import numpy as np
 
 class Blackjack_MC():
@@ -20,7 +20,14 @@ class Blackjack_MC():
     def choose_action(self, playerVal, dealerVal, usable_ace):
         action_space = 2
 
+        # print("usable ace")
+        # print(usable_ace)
+        # print(playerVal)
+        # print(dealerVal)
+        # print(self.policy_values.shape)
         current_policy = self.policy_values[playerVal-12][dealerVal - 2][usable_ace]
+        # print("current policy")
+        # print(current_policy)
         optimal_policy = np.argmax(current_policy)
 
         optimal_probability = 1 - self.epsilon + self.epsilon / action_space
@@ -42,6 +49,7 @@ class Blackjack_MC():
            
             undiscounted_return = sum(payoffs[i:])
             playerVal, dealerVal, usable_ace, action = visited_states[i]
+
 
             if playerVal <= 21: #Don't need to update state action for busts, trivially -1
                 self.policy_values[playerVal-12][dealerVal-2][usable_ace][action] += self.alpha*(undiscounted_return - self.policy_values[playerVal-12][dealerVal-2][usable_ace][action]) 
