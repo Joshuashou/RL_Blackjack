@@ -14,20 +14,17 @@ class Blackjack_MC():
 
         self.policy_values = np.zeros((len(player_hand_values), len(dealer_card_values), 2, len(num_actions)))/2
 
+        # Initialize a dictionary to store policy values at intervals
+        self.policy_values_at_intervals = []
+
         #We want to start out our policy values to be 1/2 between standing and hitting. 
 
 
     def choose_action(self, playerVal, dealerVal, usable_ace):
         action_space = 2
 
-        # print("usable ace")
-        # print(usable_ace)
-        # print(playerVal)
-        # print(dealerVal)
-        # print(self.policy_values.shape)
         current_policy = self.policy_values[playerVal-12][dealerVal - 2][usable_ace]
-        # print("current policy")
-        # print(current_policy)
+
         optimal_policy = np.argmax(current_policy)
 
         optimal_probability = 1 - self.epsilon + self.epsilon / action_space
@@ -61,6 +58,12 @@ class Blackjack_MC():
     def run_MC(self):
 
         action_space = 2 #Either Stand or Hit
+
+
+        #Store values at intervals. 
+
+        # Define the intervals
+        intervals = [1, 1000, 10000, 100000] + list(range(200000, self.iterations+1, 100000))
 
         for i in range(self.iterations): #Repeat iterations to update state values and policy iteration. 
             visited_states = []
@@ -126,19 +129,9 @@ class Blackjack_MC():
             #UPDATE POLICIES
             self.update_policy(visited_states, payoffs)
 
-            #Store values at intervals. 
-
-        # Initialize a dictionary to store policy values at intervals
-        self.policy_values_at_intervals = {}
-
-        # Define the intervals
-        intervals = [1, 1000, 10000, 100000] + list(range(200000, self.iterations+1, 100000))
-
-        for i in range(1, self.iterations + 1):  # Start counting from 1
-
             # Save policy values at specified intervals
             if i in intervals:
-                self.policy_values_at_intervals[i] = np.copy(self.policy_values)
+                self.policy_values_at_intervals.append(np.copy(self.policy_values))
 
                     
             

@@ -19,6 +19,6 @@ if __name__ == "__main__":
         simulation.run_MC()
 
         # Save Results To Simulations Folder
-        save_string = 'Epsilon{:.2f}_Alpha{:.5f}_Iterations{}'.format(epsilon, alpha, iterations)
+        save_string = 'Epsilon{:.2f}_Alpha{:.4f}'.format(epsilon, alpha)
 
         np.save('Simulations/' + save_string, simulation.policy_values_at_intervals)
