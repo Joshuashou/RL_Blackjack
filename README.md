@@ -42,3 +42,17 @@ Here are the results and strategies for Usable(hard) and Non Usable Ace(soft) fo
 <img width="400" alt="Soft Stand State Action Values (0 1, 1:5000, 10M)" src="https://github.com/Joshuashou/RL_Blackjack/assets/81851383/737b2bcc-6a3c-4745-af2b-89d651f977ad">
 
 
+
+## Step Size Analysis
+
+Judging by the different results in how our policy is changing from step size, we can see different optimal step size lead to different results. 
+
+This becomes more evident when we look at Soft values, where the amount of updates where we visit the state to becomes lower, which make our impacts have stronger effect. Further, this is also where increasing our exploration probability will cause more exploration into the supposed non-optimal policy. 
+
+To look into specific examples, let us observe the case of having a soft 17 versus a dealer 7, and how our policy values change throughout the simulation. 
+
+
+
+
+Another example is Soft 15 versus a dealer 3, and we similarly look at the different policy values throughout the simulation. 
+
