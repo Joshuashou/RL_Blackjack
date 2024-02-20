@@ -8,7 +8,7 @@ from Environment import game
 if __name__ == "__main__":
     print("Starting Monte Carlo Blackjack Simulation !")
 
-    epsilon = 0.1
+    epsilon = 0.25
     alphas = [1.0/1000, 1.0/3000, 1.0/5000]
     iterations = 10000000
 
