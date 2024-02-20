@@ -51,8 +51,8 @@ This becomes more evident when we look at Soft values, where the amount of updat
 
 To look into specific examples, let us observe the case of having a soft 17 versus a dealer 7, and how our policy values change throughout the simulation. 
 
-<img width="400" alt="Soft_Player17_Dealer_70.0010" src="https://github.com/Joshuashou/RL_Blackjack/assets/81851383/737b2bcc-6a3c-4745-af2b-89d651f977ad](https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/State_Action_Trajectories/Soft_Player17_Dealer_70.0010.png)">
-<img width="400" alt="Soft_Player17_Dealer_70.0002" src="https://github.com/Joshuashou/RL_Blackjack/assets/81851383/737b2bcc-6a3c-4745-af2b-89d651f977ad](https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/State_Action_Trajectories/Soft_Player17_Dealer_70.0002.png)">
+<img width="400" alt="Soft_Player17_Dealer_70.0010" src="(https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/State_Action_Trajectories/Soft_Player17_Dealer_70.0010.png)">
+<img width="400" alt="Soft_Player17_Dealer_70.0002" src="(https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/State_Action_Trajectories/Soft_Player17_Dealer_70.0002.png)">
 
 
 
