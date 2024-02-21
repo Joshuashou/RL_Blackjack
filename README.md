@@ -28,8 +28,11 @@ Results contains post training state action value heat maps for visualizations. 
 
 Here are the results and strategies for Usable(hard) and Non Usable Ace(soft) for Exploration probability of 10% and Step size of 1/5000, as well as their actual state action values. 
 
-<img width="400" alt="Hard Optimal State Action Pairs (0 1, 1:5000, 10M)" src="https://github.com/Joshuashou/RL_Blackjack/assets/81851383/7a8c127c-e974-4faa-885e-cc4ff88ee806">
-<img width="400" alt="Soft Optimal State Action Pairs (0 1, 1:5000, 10M)" src="https://github.com/Joshuashou/RL_Blackjack/assets/81851383/c767bbfe-03f1-4409-90cc-415e23e39558">
+<p>
+  <img width="400" alt="Hard Optimal State Action Pairs (0 1, 1:5000, 10M)" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/Alpha_0.0002/Hard%20Optimal%20State%20Action%20Polices.png" style="display: inline-block;">
+  <img width="400" alt="Soft Optimal State Action Pairs (0 1, 1:5000, 10M)" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/Alpha_0.0002/Soft%20Optimal%20State%20Action%20Polices.png" style="display: inline-block;">
+</p>
+
 
 
 
@@ -50,12 +53,17 @@ Judging by the different results in how our policy is changing from step size, w
 This becomes more evident when we look at Soft values, where the amount of updates where we visit the state to becomes lower, which make our impacts have stronger effect. Further, this is also where increasing our exploration probability will cause more exploration into the supposed non-optimal policy. 
 
 To look into specific examples, let us observe the case of having a soft 17 versus a dealer 7, and how our policy values change throughout the simulation. 
-    
-<img width="400" alt="Soft_Player17_Dealer_40.0002" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/State_Action_Trajectories/Soft_Player17_Dealer_40.0002.png">
-<img width="400" alt="Soft_Player17_Dealer_40.0010" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/State_Action_Trajectories/Soft_Player17_Dealer_40.0010.png">
 
-
+<p>
+  <img width="400" alt="Soft_Player17_Dealer_70.0002" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/State_Action_Trajectories/Soft_Player17_Dealer_70.0002.png">
+  <img width="400" alt="Soft_Player17_Dealer_70.0010" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/State_Action_Trajectories/Soft_Player17_Dealer_70.0010.png">
+</p>
 
 
 Another example is Soft 15 versus a dealer 3, and we similarly look at the different policy values throughout the simulation. 
+
+<p>
+  <img width="400" alt="Soft_Player15_Dealer_30.0002" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/State_Action_Trajectories/Soft_Player15_Dealer_30.0002.png">
+  <img width="400" alt="Soft_Player15_Dealer_30.0010" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/State_Action_Trajectories/Soft_Player15_Dealer_30.0010.png">
+</p>
 
