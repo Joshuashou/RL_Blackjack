@@ -28,8 +28,8 @@ Results contains post training state action value heat maps for visualizations. 
 
 Here are the results and strategies for Usable(hard) and Non Usable Ace(soft) for Exploration probability of 10% and Step size of 1/5000, as well as their actual state action values. 
 
-<img width="400" alt="Hard Optimal State Action Pairs (0 1, 1:5000, 10M)" src="https://github.com/Joshuashou/RL_Blackjack/assets/81851383/7a8c127c-e974-4faa-885e-cc4ff88ee806">
-<img width="400" alt="Soft Optimal State Action Pairs (0 1, 1:5000, 10M)" src="https://github.com/Joshuashou/RL_Blackjack/assets/81851383/c767bbfe-03f1-4409-90cc-415e23e39558">
+<img width="400" alt="Hard Optimal State Action Pairs (0 1, 1:5000, 10M)" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/Alpha_0.0002/Hard%20Optimal%20State%20Action%20Polices.png">
+<img width="400" alt="Soft Optimal State Action Pairs (0 1, 1:5000, 10M)" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/Alpha_0.0002/Soft%20Optimal%20State%20Action%20Polices.png">
 
 
 
