@@ -13,6 +13,12 @@ Currently, actions are limited to HIT and STAND, looking to add Doubling and Spl
 
 The algorithm simulates 10 million hands of blackjack, and uses the outcome to update state action value pairs for all states of player hand value and dealer hand value visited. The action chosen at each step is the optimal value, with an exploration probability of 10% to explore the alternative pathway. The update step size is 1/3000, 1/5000, and 1/1000. 
 
+Now, with each simulation, we use the follow update rule to update our State Action Value
+
+<img width="400" alt="Update Rule" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Equations/Update_rule.gif">
+
+
+
 ## Files
 
 Environment folder contains Hand.py and game.py, which set up the Blackjack game structure and values. 
@@ -32,7 +38,6 @@ Here are the results and strategies for Usable(hard) and Non Usable Ace(soft) fo
   <img width="400" alt="Hard Optimal State Action Pairs (0 1, 1:5000, 10M)" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/Alpha_0.0002/Hard%20Optimal%20State%20Action%20Polices.png" style="display: inline-block;">
   <img width="400" alt="Soft Optimal State Action Pairs (0 1, 1:5000, 10M)" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/Alpha_0.0002/Soft%20Optimal%20State%20Action%20Polices.png" style="display: inline-block;">
 </p>
-
 
 
 
@@ -65,6 +70,15 @@ Here, we observe that since the values of stand and hit are close enough to each
 Now, let us look at another example of having a Hard 16 versus a dealer 10. 
 
 <p>
-  <img width="400" alt="Hard_Player16_Dealer_100.0002" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/State_Action_Trajectories/Soft_Player16_Dealer_100.0002.png">
-  <img width="400" alt="Hard_Player16_Dealer_100.0010" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/State_Action_Trajectories/Soft_Player16_Dealer_100.0010.png">
+  <img width="400" alt="Hard_Player16_Dealer_100.0002" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/State_Action_Trajectories/Hard_Player16_Dealer_100.0002.png">
+  <img width="400" alt="Hard_Player16_Dealer_100.0010" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/State_Action_Trajectories/Hard_Player16_Dealer_100.0010.png">
 </p>
+
+In this example, we observe that since this example it is highly likely for us to bust, and standing is also likely losing, it makes it hard for the algorithm to differentiate between the two actions. Thus, although we get to the correct region quickly, we require a smaller step size update value to really differentiate the two actions. 
+
+We see that a constant alpha/step size approach may not always be optimal, as different states often require different parameter values for Reinforcement Learning. 
+
+
+## Credit
+
+Work inspired by following youtube video: https://www.youtube.com/watch?v=bpUszPiWM7o&t=1308s . Wanted to recreate simulation to improve coding ability and fundamental RL algorithm.
