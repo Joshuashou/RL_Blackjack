@@ -53,12 +53,17 @@ Judging by the different results in how our policy is changing from step size, w
 This becomes more evident when we look at Soft values, where the amount of updates where we visit the state to becomes lower, which make our impacts have stronger effect. Further, this is also where increasing our exploration probability will cause more exploration into the supposed non-optimal policy. 
 
 To look into specific examples, let us observe the case of having a soft 17 versus a dealer 7, and how our policy values change throughout the simulation. 
-    
-<img width="400" alt="Soft_Player17_Dealer_40.0002" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/State_Action_Trajectories/Soft_Player17_Dealer_40.0002.png">
-<img width="400" alt="Soft_Player17_Dealer_40.0010" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/State_Action_Trajectories/Soft_Player17_Dealer_40.0010.png">
 
-
+<p>
+  <img width="400" alt="Soft_Player17_Dealer_40.0002" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/State_Action_Trajectories/Soft_Player17_Dealer_40.0002.png">
+  <img width="400" alt="Soft_Player17_Dealer_40.0010" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/State_Action_Trajectories/Soft_Player17_Dealer_40.0010.png">
+</p>
 
 
 Another example is Soft 15 versus a dealer 3, and we similarly look at the different policy values throughout the simulation. 
+
+<p>
+  <img width="400" alt="Soft_Player15_Dealer_30.0002" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/State_Action_Trajectories/Soft_Player15_Dealer_30.0002.png">
+  <img width="400" alt="Soft_Player15_Dealer_30.0010" src="https://github.com/Joshuashou/RL_Blackjack/blob/master/Results/State_Action_Trajectories/Soft_Player15_Dealer_30.0010.png">
+</p>
 
